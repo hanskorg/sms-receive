@@ -1,0 +1,57 @@
+{{ define "info.html"}}
+{{template "header.html"}}
+  <body>
+
+  {{template "nav.html" .}}
+
+    <div class="container">
+      {{template "notice.html" .}}
+      <div class="container">
+        {{if .err}}
+          <div class="alert alert-danger" role="alert">Number Not Found({{.err}})</div>
+        {{else}}
+          <div class="row">
+            <p class="lead text-center">Number: <strong>+{{.number.ZoneID}} {{.number.Number}}</strong></p>
+          </div>
+          {{if not .number.Valid}}
+            <div class="row">
+              <p class="alert alert-danger"> This number was offline, no longer receive.</p>
+            </div>
+          {{end}}
+          <div class="row">
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col" class="col-xs-3	col-md-2 text-center">From</th>
+                  <th scope="col" class="text-center">Message</th>
+                  <th scope="col" class="col-xs-3	col-md-2 text-center">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{range  $info := .messages}} 
+                <tr>
+                  <th scope="row" class="text-center">{{$info.FromEncoded}}</th>
+                  <td style="word-break: break-all">{{$info.Message}}</td>
+                  <td class="text-center">{{$info.Duration}}</td>
+                </tr>
+                {{else}}
+                <tr>
+                  <div class="alert alert-info" role="alert">No Received</div>
+                </tr>
+                {{end}}
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <nav aria-label="...">
+              <ul class="pager">
+                <li><a href="#">Pre</a></li>
+                <li><a href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+      </div>
+      {{end}}
+    </div>
+{{template "footer.html"}}
+{{end}}

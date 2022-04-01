@@ -1,0 +1,44 @@
+{{ define "nav.html"}}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">{{.Brand}}</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li {{if not $.zoneID}} class="active"{{end}}><a href="/">Numbers</a></li>
+          {{range $zone := .zones}}
+            {{if $zone.Active}}
+                {{if ne "" $zone.County}}
+            <li {{if and ($.zoneID) (eq $.cname $zone.County)}}{{if eq $.zoneID $zone.ID}} class="active"{{end}}{{end}}><a href="/zone/{{$zone.ID}}/{{$zone.County}}">{index .Country $zone.County}}}</a></li>
+                {{else}}
+            <li {{if and ($.zoneID) (eq $.cname $zone.County)}}{{if eq $.zoneID $zone.ID}} class="active"{{end}}{{end}}><a href="/zone/{{$zone.ID}}">{{$zone.EN}}</a></li>
+                 {{end}}
+            {{end}}
+          {{end}}
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Preparing</a></li>
+                <li role="separator" class="divider"></li>
+                {{range $zone := .zones}}
+                  {{if eq $zone.Active  false}}
+                    <li><a href="#">{{$zone.region}}</a></li>
+                  {{end}}
+                {{end}}
+              </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Private</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+{{end}}

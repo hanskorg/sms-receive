@@ -1,0 +1,45 @@
+{{ define "index.html"}}
+{{template "header.html" .}}
+
+<body>
+
+{{template "nav.html" .}}
+    <div class="container">
+      {{template "notice.html" .}}
+      <div class="container">
+            <div class="row">
+                {{range $number := .numbers}}
+                <div class="col-xs-6 col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading bg-info">
+                            <div class="row">
+                                <div class="col-xs-2 text-left" style="padding:0px">
+                                    <img class="img-rounded center-block" height="22px" src="/assets/icons/{{$number.Zone.Short}}.png" >
+                                </div>
+                                <div class="col-xs-10 text-right">Location: <strong>{{$number.Zone.EN}}</strong></div>
+                            </div>
+                        </div>
+                        <div class="panel-body bg-{{if $number.Valid}}info{{else}}warning{{end}} text-center">
+                            <a href="/info/{{$number.ID}}">
+                                <strong>
+                                    <p class="h4" id="n_{{$number.Number}}">+{{$number.ZoneID}} <span id="number_{{$number.Number}}">{{$number.Number}}{{if not $number.Valid}}(Offline){{end}}</span></p>
+                                </strong>
+                            </a>
+                        </div>
+                        <div class="panel-footer text-right">
+{{/*                            <span class="">Received:</span>*/}}
+                            <span class="">
+                                <a class="btn btn-success" data-clipboard-target="#number_{{$number.Number}}" tabindex="0" role="button" >Copy</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {{else}}
+                    <div class="alert alert-info center-text" role="alert">Number preparation</div>
+                {{end}}
+          </div>
+
+      </div>
+    </div><!-- /.container -->
+{{template "footer.html"}}
+{{end}}

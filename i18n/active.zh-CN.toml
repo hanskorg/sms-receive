@@ -1,0 +1,83 @@
+[Brand]
+hash = "sha1-763da503d90001e5a58852e9031b97bdfca5ba6f"
+other = "免费海外手机号接收工具"
+
+["Country.ca"]
+hash = "sha1-cd6a7b8768528485a0dbcd459185091e80dc28ad"
+other = "加拿大"
+
+["Country.hk"]
+hash = "sha1-9ad37566ae894750eccfd97f9d62c38ce0db6c9b"
+other = "HongKong"
+
+["Country.jp"]
+hash = "sha1-3dd443128e043c568ba5120a41a93ccf408ec775"
+other = "日本"
+
+["Country.ph"]
+hash = "sha1-8067364d44f5e37baba7e13ba124e934df410e2a"
+other = "Philippines"
+
+["Country.ru"]
+hash = "sha1-74ad93cbebf587ac46ab0ef1e3f24139ddd3f535"
+other = "俄罗斯"
+
+["Country.tw"]
+hash = "sha1-094d515b3608fefc6759a36412cee467437417a5"
+other = "Taiwan"
+
+["Country.uk"]
+hash = "sha1-7770d04c7bfb791e7c95959f12d6797bee87a8d8"
+other = "英国"
+
+["Country.usa"]
+hash = "sha1-18bc5956dbf1cc6c9a5baeb624c9e7e472a04c2e"
+other = "美国"
+
+[Description]
+hash = "sha1-3f8356f999aff37ef7db047ebaa83abbe63846dc"
+other = "免费接收验证码, 美国手机号,加拿大手机号, 英国手机号, 海外手机号, 收码，免费海外验证码接收工具."
+
+[Keywords]
+hash = "sha1-dc1ba16620100d961768ccf719379df78ce6de1a"
+other = "免费接收验证码, 美国手机号,加拿大手机号, 英国手机号, 海外手机号, 收码"
+
+["Message.notfoundnotice"]
+hash = "sha1-a14d89f4a4f96fcec97b3003bfe4bde35752f269"
+other = "没有此号码"
+
+["Message.offlinenotice"]
+hash = "sha1-585d690aee3610c88f7411f4994ec099de35a575"
+other = "号码下线，不再接收新短信。"
+
+["Number.copy"]
+hash = "sha1-af74f7c5362aaee985bf8cda3dd75fc80751ce51"
+other = "复制"
+
+["Number.offline"]
+hash = "sha1-e01fa717baccf94556f36e24206821f4f9e2047f"
+other = "下线"
+
+["Number.received"]
+hash = "sha1-27548c4fc95d7c7fdabb7df9f94a1e05cc1d7cb7"
+other = "接收"
+
+["Number.zone"]
+hash = "sha1-03efccb49f3ff5f0055a644eae98835dda00b789"
+other = "地区"
+
+[PhoneNumber]
+hash = "sha1-b7baa1d40c4ea29afc9098732bffee2a861a6c44"
+other = "号码"
+
+[Title]
+hash = "sha1-33d4851bae53408f026b73d6b202b180872fb1a7"
+other = "免费短信接收 共享手机号"
+
+["Notice.Description"]
+hash = "sha1-e1e938dcf8878945f292666b883b650fcb295c7d"
+other = "本工具提供免费海外手机号接收，信息完全公开，不做任何保密性承诺。"
+
+["Notice.Title"]
+hash = "sha1-2233bf4e4af5772a2b533f44ac69784b752200b2"
+other = "海外临时短信接收工具"

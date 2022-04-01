@@ -1,0 +1,40 @@
+Title = "SMS Receive Free - shared mobile number"
+Brand = "SMS Receive Free"
+Keywords = "sms receive free, america number,canada number, eu number, uk number, united kingdom number"
+Description = "sms receive free, America Canada sms short message receive tool."
+PhoneNumber = "Number"
+[Notice]
+Title = "SMS temporary receiving tool"
+Description = "This tool only provides the function of receiving short messages temporarily, and does not make any guarantee of availability and confidentiality."
+[Number]
+zone = "Zone"
+received = "Received"
+offline = "Offline"
+copy = "Copy"
+[Message]
+offlinenotice = "This number was offline, no longer receive."
+notfoundnotice = "Number Not Found"
+[[Country]]
+id = "usa"
+title = "USA"
+[[Country]]
+id = "ca"
+title = "Canada"
+[[Country]]
+id = "uk"
+title = "UK"
+[[Country]]
+id = "ru"
+title = "Russian"
+[[Country]]
+id = "hk"
+title = "HongKong"
+[[Country]]
+id = "ph"
+title = "Philippines"
+[[Country]]
+id = "jp"
+title = "Janpan"
+[[Country]]
+id = "tw"
+title = "Taiwan"

@@ -1,0 +1,83 @@
+[Brand]
+hash = "sha1-763da503d90001e5a58852e9031b97bdfca5ba6f"
+other = "SMS Receive Free"
+
+["Country.ca"]
+hash = "sha1-cd6a7b8768528485a0dbcd459185091e80dc28ad"
+other = "Canada"
+
+["Country.hk"]
+hash = "sha1-9ad37566ae894750eccfd97f9d62c38ce0db6c9b"
+other = "HongKong"
+
+["Country.jp"]
+hash = "sha1-3dd443128e043c568ba5120a41a93ccf408ec775"
+other = "Janpan"
+
+["Country.ph"]
+hash = "sha1-8067364d44f5e37baba7e13ba124e934df410e2a"
+other = "Philippines"
+
+["Country.ru"]
+hash = "sha1-74ad93cbebf587ac46ab0ef1e3f24139ddd3f535"
+other = "Russian"
+
+["Country.tw"]
+hash = "sha1-094d515b3608fefc6759a36412cee467437417a5"
+other = "Taiwan"
+
+["Country.uk"]
+hash = "sha1-7770d04c7bfb791e7c95959f12d6797bee87a8d8"
+other = "UK"
+
+["Country.usa"]
+hash = "sha1-18bc5956dbf1cc6c9a5baeb624c9e7e472a04c2e"
+other = "USA"
+
+[Description]
+hash = "sha1-3f8356f999aff37ef7db047ebaa83abbe63846dc"
+other = "sms receive free, America Canada sms short message receive tool."
+
+[Keywords]
+hash = "sha1-dc1ba16620100d961768ccf719379df78ce6de1a"
+other = "sms receive free, america number,canada number, eu number, uk number, united kingdom number"
+
+["Message.notfoundnotice"]
+hash = "sha1-a14d89f4a4f96fcec97b3003bfe4bde35752f269"
+other = "Number Not Found"
+
+["Message.offlinenotice"]
+hash = "sha1-585d690aee3610c88f7411f4994ec099de35a575"
+other = "This number was offline, no longer receive."
+
+["Notice.Description"]
+hash = "sha1-e1e938dcf8878945f292666b883b650fcb295c7d"
+other = "This tool only provides the function of receiving short messages temporarily, and does not make any guarantee of availability and confidentiality."
+
+["Notice.Title"]
+hash = "sha1-2233bf4e4af5772a2b533f44ac69784b752200b2"
+other = "SMS temporary receiving tool"
+
+["Number.copy"]
+hash = "sha1-af74f7c5362aaee985bf8cda3dd75fc80751ce51"
+other = "Copy"
+
+["Number.offline"]
+hash = "sha1-e01fa717baccf94556f36e24206821f4f9e2047f"
+other = "Offline"
+
+["Number.received"]
+hash = "sha1-27548c4fc95d7c7fdabb7df9f94a1e05cc1d7cb7"
+other = "Received"
+
+["Number.zone"]
+hash = "sha1-03efccb49f3ff5f0055a644eae98835dda00b789"
+other = "Zone"
+
+[PhoneNumber]
+hash = "sha1-b7baa1d40c4ea29afc9098732bffee2a861a6c44"
+other = "Number"
+
+[Title]
+hash = "sha1-33d4851bae53408f026b73d6b202b180872fb1a7"
+other = "SMS Receive Free - shared mobile number"

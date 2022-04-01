@@ -1,0 +1,24 @@
+stages:
+  - build
+  - deploy
+build:
+  stage: build
+  script:
+    - GOOS=linux GOARCH=amd64 go build -o sms ./main.go
+    - tar czvf smsfree.tar.gz sms html/
+  tags:
+    - go-1.14
+  only:
+    - master
+  artifacts:
+    paths:
+      - smsfree.tar.gz
+deploy:
+  stage: deploy
+  variables:
+    deploy_path: "/data/smsfree"
+  script:
+  tags:
+    - go-1.14
+  only:
+    - master

@@ -1,0 +1,53 @@
+database:
+  dsn: user:password@tcp(localhost:3306)/smsfree?charset=utf8&parseTime=True&loc=Local
+  maxConnection: 10
+  maxIdle: 2
+bind: 127.0.0.1:8080
+templateDir:
+twilio:
+  accountSID: <sid> 
+  authToken: <token> 
+  hook: http://hook:8080
+zone:
+  - id: 1
+    short: usa
+    county: usa
+    cn: 美国
+    en: USA
+    active: true
+  - id: 1
+    short: ca
+    county: ca
+    cn: 加拿大
+    en: Canada
+    active: true
+  - id: 44
+    short: uk
+    cn: 英国
+    en: UK
+    active: true
+  - id: 96
+    cn: 俄罗斯
+    short: ru
+    en: Russian
+    active: false
+  - id: 852
+    cn: 香港
+    short: hk
+    en: HongKong
+    active: false
+  - id: 63
+    cn: 菲律宾
+    short: ph
+    en: Philippines
+    active: false
+  - id: 81
+    cn: 日本
+    short: jp
+    en: Janpan
+    active: false
+  - id: 886
+    short: tw
+    cn: 台湾
+    en: Taiwan
+    active: false
